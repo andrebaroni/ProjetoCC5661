@@ -1,6 +1,6 @@
 import random, math
  
-def basic_counting_sort(tlist, k, size):
+def counting_sort(tlist, k, size):
     count_list = [0]*(k)
  
     for n in tlist:
@@ -21,5 +21,37 @@ print(listaDesor)
  
 ## Fazer o counting sort.
 print("\nLista ordenada usando counting sort estável")
-basic_counting_sort(listaDesor, max(listaDesor)+1, len(listaDesor))
+counting_sort(listaDesor, max(listaDesor)+1, len(listaDesor))
 print(listaDesor)
+
+
+#outro jeito
+'''def countingSort(lista, exp1): 
+  
+    n = len(lista) 
+  
+    output = [0] * (n) 
+  
+    count = [0] * (10) 
+  
+    for i in range(0, n): 
+        index = (lista[i]/exp1) 
+        count[ int((index)%10) ] += 1
+  
+    for i in range(1,10): 
+        count[i] += count[i-1] 
+  
+    i = n-1
+    while i>=0: 
+        index = (lista[i]/exp1) 
+        output[ count[ int((index)%10) ] - 1] = lista[i] 
+        count[ int((index)%10) ] -= 1
+        i -= 1
+  
+    i = 0
+    for i in range(0,len(lista)): 
+        lista[i] = output[i] 
+
+
+    return lista
+'''
