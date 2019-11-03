@@ -46,12 +46,6 @@ if(slider.value > 70 && slider.value <= 95){
 	document.getElementById('surface').width = larguraBloco*(slider.value) + 220; //muda a largura do canvas de acordo com a quantidade de blocos
 }
 
-//para dar f5 = document.getElementById('surface').value = slider.value -------- não está funcionando pq n ta esperando a tela carregar completamente
-//slider.onmouseup = function resize() {
-	//document.getElementById('surface').value = slider.value
-	//window.location.reload(1);
-//}
-//slider.addEventListener("click", resize);
 
 //Clase tela, cria o canvas 
 class Tela {
