@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- André Luis Baroni - RA: 22217036-7
+Eduardo Baptista dos Santos - RA: 22217017-7 -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Algoritmos de Ordenação</title>
+	<link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+	<h1>Algoritmos de Ordenação</h1>
+
+	<!-- Botoes -->
+	<div class="controller">
+		<button id="Resetar" class="botoes">Resetar</button>
+		<button id="Simular" class="botoes">Simular</button>
+		<button id="Pausar" class="botoes">Pausar</button>
+		<div id="Contador" class="botoes">0</div>
+		<button id="Retrocede" class="botoes">&#8249;</button>
+		<button id="Avanca" class="botoes">&#8250;</button>
+		<div class="slidecontainer">
+			<input type="range" min="1" max="200" class="slider" id="myRange">
+		</div>
+		<p>Escolha a quantidade de blocos e aperte F5: <span id="demo"></span></p>
+	</div>
+
+	<!-- Secao do canvas -->
+	<section class="flex-container">
+		<canvas class="canvasFlex" id="surface" width="1850" height="620"></canvas>
+		<!-- checkbox para escolha dos algoritmos a serem visualizados -->
+		<section class="marks">
+			<section class="checks">
+				<input class="item" type="checkbox" id="bubble_check" name="bubble_check" checked>
+				<input class="item" type="checkbox" id="insertion_check" name="insertion_check" checked>
+				<input class="item" type="checkbox" id="selection_check" name="selection_check" checked>
+				<input class="item" type="checkbox" id="quick_check" name="quick_check" checked>
+				<input class="item" type="checkbox" id="counting_check" name="counting_check" checked>
+				<input class="item" type="checkbox" id="heap_check" name="heap_check" checked>
+				<input class="item" type="checkbox" id="merge_check" name="merge_check" checked>
+				<input class="item" type="checkbox" id="radix_check" name="radix_check" checked>
+				<input class="item" type="checkbox" id="shell_check" name="shell_check" checked>
+				<input class="item" type="checkbox" id="pancake_check" name="pancake_check" checked>
+			</section>
+			<section class="checks2">
+				<label class="item2"><label for="bubble_check">Bubble sort - </label><span id="bubbleFim"></span></label>
+				<label class="item2"><label for="insertion_check">Insertion sort - </label><span id="insertionFim"></span></label>
+				<label class="item2"><label for="selection_check">Selection sort - </label><span id="selectionFim"></span></label>
+				<label class="item2"><label for="quick_check">Quick sort - </label><span id="quickFim"></span></label>
+				<label class="item2"><label for="counting_check">Counting sort - </label><span id="countingFim"></span></label>
+				<label class="item2"><label for="heap_check">Heap sort - </label><span id="heapFim"></span></label>
+				<label class="item2"><label for="merge_check">Merge sort - </label><span id="mergeFim"></span></label>
+				<label class="item2"><label for="radix_check">Radix sort - </label><span id="radixFim"></span></label>
+				<label class="item2"><label for="shell_check">Shell sort - </label><span id="shellFim"></span></label>
+				<label class="item2"><label for="pancake_check">Pancake sort - </label><span id="pancakeFim"></span></label>
+			</section>
+			
+		</section>
+	</section>
+
+	
+
+</body>
+
+<script src="script.mjs" type="module"></script>
+
+</html>

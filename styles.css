@@ -1,0 +1,127 @@
+* {
+	background-color: rgb(70, 130, 180);
+	font-size: 110%;
+	font-family: 'Arial';
+	color: white;
+	text-align: center;
+}
+
+.controller{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	margin-right: 12%;
+}
+
+
+canvas {
+	border-radius: 25px;
+	border: 3px solid white;
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.marks {
+	display: flex;
+}
+
+.checks {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 30px 10px 4px 15px;
+}
+
+.checks2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 30px 10px 10px 15px;
+}
+
+
+.item {
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.item2 {
+	margin-bottom: 10px;
+}
+
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 12%;
+	font-family: 'Arial';
+	font-size: 200%;
+	
+}
+
+div {
+	margin-top: 3px;
+	text-align: center;
+}
+
+table{
+	margin-top: 3px;
+	text-align: center;
+}
+
+#Step_counter {
+	border: 1px solid white;
+	display: inline-block;
+}
+
+.botoes {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	border-radius: 8px;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 10px;
+	width: 80px;
+  }
+
+
+  .slidecontainer {
+	display: flex;
+	align-content: center;
+	margin-left: 10%;
+	width: 30%; /* Width of the outside container */
+  }
+
+  .slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 25px;
+	
+	border-radius: 5px;  
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	background: #4CAF50;
+	cursor: pointer;
+  }
