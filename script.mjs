@@ -41,6 +41,9 @@ if(slider.value > 70 && slider.value <= 95){
 }else if(slider.value > 130 && slider.value <= 200){
 	larguraBloco = 5.2;
 	document.getElementById('surface').width = larguraBloco*(slider.value) + 220;
+}else if(slider.value > 200){
+	larguraBloco = 3;
+	document.getElementById('surface').width = larguraBloco*(slider.value) + 220;
 }else{
 	larguraBloco = 15;
 	document.getElementById('surface').width = larguraBloco*(slider.value) + 220; //muda a largura do canvas de acordo com a quantidade de blocos
