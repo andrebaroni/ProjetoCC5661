@@ -6,3 +6,5 @@ Projeto de Análise e Complexidade de Algoritmos
 O Google Chrome não roda por causa do Cors, precisa criar um server local para poder funcionar. Isso acontece por causa da importação
 das funções vindas de outros arquivos, o Chrome aparecia um erro sobre module, e a solução que achamos foi passar de .js para .mjs.
 Pelo WebStorm é possível rodar pelo Chrome, porque ele cria um servidor local.
+
+Esquecemos que era para commitar cada atualização, por isso que tem apenas um commit com tudo ja pronto, mas ambos fizeram suas partes.
